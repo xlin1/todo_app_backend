@@ -3,12 +3,12 @@
       <img class="company-logo" src="https://public.3.basecamp.com/p/iahgNshn1oKq98sWGf1q89Vo/uploads/511042491/download/CodeNow%20Logo.png"></img>
       Workshop Todo List
     </h1>
-    <h1>Todo #<%=params[:id]%></h1>
+    <h1>Todo #<%=@t.id%></h1>
 
     <div class="card">
       <input type="checkbox" name=""/>
-      <span><%=@todo_description%></span>
-      <span class="pomodoro-estimate"><%=@todo_pomodoro_estimate%> Pomodoros</span>
+      <span><%=@t.description%></span>
+      <span class="pomodoro-estimate"><%=@t.pomodoros_estimate%> Pomodoros</span>
       <p></p>
       <a href="#" class="button" id="edit-todo-button">Edit</a>
       <a href="#" class="button" id="delete-todo-button">Delete</a>
