@@ -21,4 +21,9 @@ class TodoController < ApplicationController
      redirect_to "/todo/show/#{t.id}"
   end
   
+  def destroy
+      Todo.destroy(params[:id])
+      redirect_to ("/todos")
+  end
+  
 end
