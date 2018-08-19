@@ -10,8 +10,10 @@
       <span><%=@t.description%></span>
       <span class="pomodoro-estimate"><%=@t.pomodoros_estimate%> Pomodoros</span>
       <p></p>
-      <a href="#" class="button" id="edit-todo-button">Edit</a>
-      <a href="#" class="button" id="delete-todo-button">Delete</a>
-      <a href="/todos" class="simple-link">Go back...</a>
+      <!--<a href="#" class="button" id="edit-todo-button">Edit</a>
+      <a href="#" class="button" id="delete-todo-button">Delete</a>-->
+      
       <a href="/todo/destroy/<%=@t.id%>">Delete</a>
+      <a href="/todo/edit/<%=@t.id%>">Edit</a>
+      <a href="/todos" class="simple-link">Go back...</a>
     </div>
