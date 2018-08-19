@@ -1,17 +1,11 @@
 <h1>My To-Do List</h1>
     <ol>
+      <%@todos.each do |todo|%>
       <li>
         <input type="checkbox"/>
-        <a href="/todo/show/1">Prepare for school </a><span>August 5</span>
+        <a href="/todo/show/1"><%=todo.description%> </a><span class="pomodoros_estimate"><%=todo.pomodoros_estimate%> pomodoros </span>
       </li>
-      <li>
-        <input type="checkbox"/>
-        <a href="/todo/show/2">Prepare Lunch</a> <span>August 5</span>
-      </li>
-      <li>
-        <input type="checkbox"/>
-        <a href="/todo/show/3">Cook Breakfast</a> <span>August 6</span>
-      </li>
+      <%end%>
     </ol>
     
     <div>
