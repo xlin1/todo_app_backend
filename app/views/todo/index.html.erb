@@ -3,7 +3,7 @@
       <%@todos.each do |todo|%>
       <li>
         <input type="checkbox"/>
-        <a href="/todo/show/1"><%=todo.description%> </a><span class="pomodoros_estimate"><%=todo.pomodoros_estimate%> pomodoros </span>
+        <a href="/todo/show/<%=todo.id%>"><%=todo.description%> </a><span class="pomodoros_estimate"><%=todo.pomodoros_estimate%> pomodoros </span>
       </li>
       <%end%>
     </ol>
